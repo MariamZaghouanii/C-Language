@@ -20,14 +20,20 @@ int main()
     cin >> choice;
     if ( choice == '+'){
         res = a + b;
+        cout << "The result = " << res << endl;
     } else if( choice == '-'){
         res = a - b;
+        cout << "The result = " << res << endl;
     } else if( choice == '*'){
         res = a * b;
-    } else {
+        cout << "The result = " << res << endl;
+    } else if( choice == '/'){
         res = a / b;
+        cout << "The result = " << res << endl;
+    } else{
+        cout << "There was an error choosing the operation" << endl;
     }
-    cout << "The result = " << res << endl;
+    
 
 
 }

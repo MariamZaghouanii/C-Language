@@ -1,3 +1,9 @@
-1) git add .
-2) git commit -m"message"
+TO SUBMIT CHNAGES:
+
+1) git add . (the dot stands for all)
+2) git commit -m"message" (BE PROFESSIONAL)
 3) git push origin {destination}
+
+TO SWITCH BRANCHES:
+
+1) git checkout origin {destination}

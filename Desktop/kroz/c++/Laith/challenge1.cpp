@@ -11,18 +11,18 @@ int main()
     cout << "Type the 2nd number : ";
     cin >> b;
     int res;
-    cout << "Addition 1" << endl;
-    cout << "Subtraction 2" << endl;
-    cout << "Product 3 " << endl;
-    cout << "Division 4" << endl;
-    int choice;
+    cout << "Addition '+'" << endl;
+    cout << "Subtraction '-'" << endl;
+    cout << "Product '*' " << endl;
+    cout << "Division '/'" << endl;
+    char choice;
     cout << "Choose an operation : ";
     cin >> choice;
-    if ( choice == 1){
+    if ( choice == '+'){
         res = a + b;
-    } else if( choice == 2){
+    } else if( choice == '-'){
         res = a - b;
-    } else if( choice == 3){
+    } else if( choice == '*'){
         res = a * b;
     } else {
         res = a / b;

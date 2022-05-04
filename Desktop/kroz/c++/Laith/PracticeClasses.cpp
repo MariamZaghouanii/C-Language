@@ -57,6 +57,12 @@ int main()
 
     cout <<"Enter your choice : " << endl;
     cin >> choice;
+    while (choice < 1 || choice > 4)
+    {
+        cout << "Invelid choice" << endl;
+        cout << "Enter your choice" << endl;
+        cin >> choice;
+    }
 
 
     float a, b;
@@ -64,27 +70,25 @@ int main()
     cin >> a;
     cout <<"Enter 2nd number : " << endl;
     cin >> b;
-    while ( choice >= 1 && choice <= 4)
+    if ( choice == 1 )
     {
-        if ( choice == 1 )
-        {
-            cout <<"The result = " << calc.add(a,b) << endl;
-            break;
-        } else if ( choice == 2)
-        {
-            cout <<"The result = " << calc.sub(a,b) << endl;
-            break;
-        } else if ( choice == 3)
-        {
-            cout <<"The result = " << calc.prod(a,b) << endl;
-            break;
-        } else 
-        {
-            cout <<"The result = " << calc.div(a,b) << endl;
-            break;
-        }        
-    }   
-    return 0;    
+        cout <<"The result = " << calc.add(a,b) << endl;
+        
+    } else if ( choice == 2)
+    {
+        cout <<"The result = " << calc.sub(a,b) << endl;
+        
+    } else if ( choice == 3)
+    {
+        cout <<"The result = " << calc.prod(a,b) << endl;
+            
+    } else 
+    {
+        cout <<"The result = " << calc.div(a,b) << endl;
+    
+    }        
+       
+    
 }
 
 

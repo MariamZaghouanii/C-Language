@@ -30,13 +30,7 @@ public:
 
     float div(float a, float b)
     {
-        if ( b == 0)
-        {
-            cout <<"DIVISION BY ZERO IS INDEFINED" << endl;            
-        } else
-        {
-            return a / b;
-        }
+        return a / b;
     }    
 };
 
@@ -84,7 +78,14 @@ int main()
             
     } else 
     {
-        cout <<"The result = " << calc.div(a,b) << endl;
+        if ( b == 0)
+        {
+            cout <<"The result = UNDEFINED" << endl;
+        } else 
+        {
+            cout <<"The result = " << calc.div(a,b) << endl;
+        }
+ 
     
     }        
        
